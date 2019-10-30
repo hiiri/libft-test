@@ -14,6 +14,6 @@ Single main file to test 42 school's libft assignment.
 ## Output
 Part 1 functions are tested against the c library.
 
-Part 2 and bonus is tested against expectations of function functionality.
+Part 2 and bonus functions are tested against expectations of function functionality.
 
 0 means the function passed the test, anything else is an error.
