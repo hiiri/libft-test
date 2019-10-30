@@ -4,7 +4,7 @@ Single main file to test 42 school's libft assignment.
 ## How to use:
 1. Clone to libft repository
 
-2. Compile with libft.a
+2. Compile with your libft.a
 
 	``` gcc -Wall -Werror -Wextra libft-test.c libft.a ```
     
