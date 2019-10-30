@@ -1,5 +1,5 @@
 # libft-test
-Single main file to test 42 school's libft assignment.
+A main file to test 42 school's libft assignment.
 
 ## How to use:
 1. Clone to libft repository
