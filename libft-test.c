@@ -6,11 +6,11 @@
 /*   By: sadawi <sadawi@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:27:03 by sadawi            #+#    #+#             */
-/*   Updated: 2019/10/30 14:14:37 by sadawi           ###   ########.fr       */
+/*   Updated: 2019/10/30 14:20:47 by sadawi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
