@@ -6,7 +6,7 @@
 /*   By: sadawi <sadawi@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:27:03 by sadawi            #+#    #+#             */
-/*   Updated: 2019/10/30 14:20:47 by sadawi           ###   ########.fr       */
+/*   Updated: 2019/10/31 18:26:51 by sadawi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -213,6 +213,7 @@ int	main(int argc, char **argv)
 // strncmp
 		printf("ft_strncmp: %d ", !(strncmp(s1, s2, 0) == ft_strncmp(s1, s2, 0))); //1
 		printf("%d ", !(strncmp("", "", 3) == ft_strncmp("", "", 3))); //2
+		printf("%d ", !(77 == ft_strncmp("M", "", 44121553213513))); //2
 		printf("%d\n", !(strncmp("\0a", "\0", 2) == ft_strncmp("\0a", "\0", 2))); //3
 // atoi
 		printf("ft_atoi: %d ", !(atoi("12345") == ft_atoi("12345"))); //1
