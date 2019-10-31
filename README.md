@@ -8,7 +8,7 @@ A main file to test 42 school's libft assignment.
 
 2. Compile with your libft.a.
 
-	``` gcc -Wall -Werror -Wextra libft-test.c libft.a ```
+	``` gcc -Wall -Werror -Wextra libft-test.c libft-test-bonus.c ../libft.a ```
     
 3. Run program with no arguments to test all functions, or  
 ```./a.out 1```, ```./a.out 2``` ```./a.out 3``` to test certain parts.
