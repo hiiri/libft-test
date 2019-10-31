@@ -6,7 +6,7 @@
 /*   By: sadawi <sadawi@student.hive.fi>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:27:03 by sadawi            #+#    #+#             */
-/*   Updated: 2019/10/30 14:20:54 by sadawi           ###   ########.fr       */
+/*   Updated: 2019/10/31 13:58:21 by sadawi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 void	del(void *content, size_t content_size)
 {
-	free(content);
+	memcpy(content, "test", 5);
 	(void)(content_size);
 }
 
@@ -100,7 +100,7 @@ int	bonus(void)
 		link = link3->next;
 		ft_lstdel(&link3, del);
 		printf("ft_lstdel: %d ", !(link3 == NULL)); //1
-		printf("%d\n", (ft_strequ(link->content, "123456789"))); //2
+		printf("%d\n", !(ft_strequ(link->content, "test"))); //2
 
 		return (0);
 }
