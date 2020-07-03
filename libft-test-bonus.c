@@ -11,9 +11,7 @@
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include "bonus.h"
 
 void	del(void *content, size_t content_size)
 {
@@ -47,7 +45,7 @@ t_list *listmap(t_list *elem)
 	return (tmp);
 }
 
-int	bonus(void)
+int	main(void)
 {
 	t_list *link;
 	t_list *link2;

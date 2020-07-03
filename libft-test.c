@@ -14,8 +14,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
-int	bonus(void);
+#ifdef __linux
+	#include <bsd/string.h>
+#endif
 
 void clear(char *s1, char *s2)
 {
@@ -109,8 +110,6 @@ int	main(int argc, char **argv)
 		ft_memmove(s2, "\0\0\0", 6);
 		printf("%d\n", (memcmp(s1, s2, 13))); //2
 		clear(s1, s2);
-		memchr(s1, 'o', 13);
-		ft_memchr(s2, 'o', 13);
 // memchr
 		printf("ft_memchr: %d ", ( (memchr(s1, 'o', 13) == ft_memchr(s2, 'o', 13)))); //1
 		printf("%d ", !(memchr(s1, 'a', 13) == ft_memchr(s2, 'a', 13))); //2
@@ -341,7 +340,7 @@ int	main(int argc, char **argv)
 		printf("ft_strsplit: %d ", strcmp(p3[0], "hello")); //1
 		printf("%d ", strcmp(p3[1], "fellow")); //2
 		printf("%d ", strcmp(p3[2], "students")); //3
-		printf("%d\n", !(p3[3] == '\0')); //4
+		printf("%d\n", !(p3[3] == 0)); //4
 // itoa
 		p1 = ft_itoa(12345);
 		printf("ft_itoa: %d ", strcmp(p1, "12345")); //1
@@ -352,7 +351,5 @@ int	main(int argc, char **argv)
 		p1 = ft_itoa(-2147483648);
 		printf("%d\n", strcmp(p1, "-2147483648")); //4
 	}
-	if (argc == 1 || !strcmp(argv[1], "3"))
-		bonus();
-		return (0);
+	return (0);
 }

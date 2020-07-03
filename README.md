@@ -4,7 +4,7 @@ A main file to test 42 school's libft assignment.
 ## How to use:
 1. Clone to libft repository.
 
-	``` git clone https://github.com/Hahli144/libft-test.git ```
+	``` git clone https://github.com/salahadawi/libft-test.git ```
 
 2. Compile with your libft.a.
 
