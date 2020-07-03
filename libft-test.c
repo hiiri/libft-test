@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   libft-test.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sadawi <sadawi@student.hive.fi>            +#+  +:+       +#+        */
+/*   By: alcohen <alcohen@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:27:03 by sadawi            #+#    #+#             */
-/*   Updated: 2019/10/31 18:26:51 by sadawi           ###   ########.fr       */
+/*   Updated: 2020/07/03 23:17:58 by alcohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#ifdef __linux
-	#include <bsd/string.h>
-#endif
 
 void clear(char *s1, char *s2)
 {
@@ -179,13 +176,6 @@ int	main(int argc, char **argv)
 		strncat(s1, "12345", 0);
 		ft_strncat(s2, "12345", 0);
 		printf("%d\n", (memcmp(s1, s2, 13))); //3
-// strlcat
-		clear(s1, s2);
-		printf("ft_strlcat: %d ", !(strlcat(s1, "test123", 13) == ft_strlcat(s2, "test123", 13))); //1
-		printf("%d ", (memcmp(s1, s2, 13))); //2
-		clear(s1, s2);
-		printf("%d ", !(strlcat(s1, "test123", 5) == ft_strlcat(s2, "test123", 5))); //3
-		printf("%d\n", (memcmp(s1, s2, 13))); //4
 // strchr
 		clear(s1, s2);
 		printf("ft_strchr: %d ", !(strchr(s1, 't') == ft_strchr(s2, 't'))); //1
@@ -200,11 +190,6 @@ int	main(int argc, char **argv)
 		printf("%d ", !(strstr(s1, "\0") == ft_strstr(s1, "\0"))); //2
 		printf("%d ", !(strstr(s1, " ") == ft_strstr(s1, " "))); //3
 		printf("%d\n", !(strstr(s1, "") == ft_strstr(s1, ""))); //4
-// strnstr
-		printf("ft_strnstr: %d ", !(strnstr(s1, "Wo", 5) == ft_strnstr(s1, "Wo", 5))); //1
-		printf("%d ", !(strnstr(s1, "\0", 13) == ft_strnstr(s1, "\0", 13))); //2
-		printf("%d ", !(strnstr(s1, " ", 6) == ft_strnstr(s1, " ", 6))); //3
-		printf("%d\n", !(strnstr(s1, "", 0) == ft_strnstr(s1, "", 0))); //4
 // strcmp
 		printf("ft_strcmp: %d ", !(strcmp(s1, s2) == ft_strcmp(s1, s2))); //1
 		printf("%d ", !(strcmp("", "") == ft_strcmp("", ""))); //2

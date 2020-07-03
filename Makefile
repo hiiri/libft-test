@@ -3,15 +3,13 @@ CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRC = libft-test.c \
 
-INCLUDES = -lbsd
-
 all: $(NAME)
 
 $(NAME):
-	$(CC) $(FLAGS) $(SRC) ../libft.a $(INCLUDES) 
+	$(CC) $(FLAGS) $(SRC) ../libft.a
 
 bonus:
-	$(CC) $(FLAGS) libft-test-bonus.c ../libft.a $(INCLUDES)
+	$(CC) $(FLAGS) libft-test-bonus.c ../libft.a
 
 fclean:
 	rm -f $(NAME)
