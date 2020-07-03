@@ -6,11 +6,11 @@
 /*   By: alcohen <alcohen@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 14:27:03 by sadawi            #+#    #+#             */
-/*   Updated: 2020/07/03 23:17:58 by alcohen          ###   ########.fr       */
+/*   Updated: 2020/07/03 23:33:25 by alcohen          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "../libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
